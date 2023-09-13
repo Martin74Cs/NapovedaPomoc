@@ -7,7 +7,7 @@ namespace NapovedaPomoc
     /// </summary>
     public class Cestina
     {
-        /// <summary>
+        /// <summary> 
         /// Převod znakové sady 852- do 1250
         /// </summary>
         /// <param name="text">původní string</param>
