@@ -3,6 +3,7 @@
 <PackageReference Include = "Swashbuckle.AspNetCore.SwaggerUI" Version = "6.5.0" />
 
 //přidání ověřování do swaggeru
+//valášk má video o přidávání oveřování ado swagger
 Soubor Program.cs
 
     builder.Services.AddSwaggerGen(option =>
