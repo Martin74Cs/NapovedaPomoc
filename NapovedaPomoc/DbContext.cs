@@ -11,11 +11,11 @@ namespace NapovedaPomoc
     {
     }
 
-    public virtual DbSet<FluidState> FluidState { get; set; }
-    public virtual DbSet<Kolony> Kolony { get; set; }
-    public virtual DbSet<Media> Media { get; set; }
-    public virtual DbSet<PedfluidHazard> PedfluidHazard { get; set; }
-    public virtual DbSet<Umisteni> Umisteni { get; set; }
+    //public virtual DbSet<FluidState> FluidState { get; set; }
+    //public virtual DbSet<Kolony> Kolony { get; set; }
+    //public virtual DbSet<Media> Media { get; set; }
+    //public virtual DbSet<PedfluidHazard> PedfluidHazard { get; set; }
+    //public virtual DbSet<Umisteni> Umisteni { get; set; }
 
     //protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     //{
@@ -31,8 +31,9 @@ namespace NapovedaPomoc
         //modelBuilder.Entity<Media>().HasOne(m => m.FluidState).WithMany(x=>x.ItemCz).HasForeignKey(m => m.id);
         //modelBuilder.Entity<Media>().HasOne(m => m.FluidStateId).WithMany(x => x.);
         //modelBuilder.Entity<Medie>()
-        OnModelCreatingPartial(modelBuilder);
+        //OnModelCreatingPartial(modelBuilder);
     }
 
-    partial void OnModelCreatingPartial(ModelBuilder modelBuilder);
+    //partial void OnModelCreatingPartial(ModelBuilder modelBuilder);
+    }
 }

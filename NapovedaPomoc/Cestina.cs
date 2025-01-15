@@ -1,4 +1,5 @@
 ﻿using System.Data;
+using System.Text;
 
 namespace NapovedaPomoc
 {
@@ -42,6 +43,17 @@ namespace NapovedaPomoc
                 cestina.Rows.Add(slo); //řádky do návratové tabulky
             }
             return cestina;
+        }
+
+        public string DecodeCsv(byte[] csvBytes, string encodingName)
+        {
+            //encoding = "UTF-8";
+            //encoding = "windows-1250"
+
+            //aby byly dostupné kodovací sady
+            Encoding.RegisterProvider(CodePagesEncodingProvider.Instance);
+            Encoding encoding = Encoding.GetEncoding(encodingName);
+            return encoding.GetString(csvBytes);
         }
     }
 }

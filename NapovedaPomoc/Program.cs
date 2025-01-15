@@ -1,3 +1,9 @@
+using NapovedaPomoc;
+
+//Singleton
+new Pouziti().Priklad();
+return;
+
 var builder = WebApplication.CreateBuilder(args);
 var app = builder.Build();
 

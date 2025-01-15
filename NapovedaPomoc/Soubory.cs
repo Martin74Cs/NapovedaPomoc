@@ -26,7 +26,7 @@ namespace NapovedaPomoc
         /// <summary>
         /// Uložení třídy
         /// </summary>
-        public static IEnumerable<T> LoadJsonList<T>(string cesta) where T : class
+        public static IEnumerable<T> LoadJson<T>(string cesta) where T : class
         {
             if (File.Exists(cesta))
             {
