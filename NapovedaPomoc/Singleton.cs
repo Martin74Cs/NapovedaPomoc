@@ -25,7 +25,7 @@
             var s1 = Singleton.Get();
             s1.Cislo = 12345;
             var s2 = Singleton.Get();
-            //v s2.Cislo - je číslo s S1
+            //v s2.Cislo - je číslo s S1 protože je to stejná instance
             Console.WriteLine(s2.Cislo);
 
             new Pouziti2().Priklad();
@@ -41,7 +41,7 @@
             Console.WriteLine(s1.Cislo);
             //Samostatně musí být konstruktor zakázán
             //var s2 = new Singleton();
-            Console.WriteLine(s2.Cislo);
+            Console.WriteLine(Singleton.Get().Cislo);
         }
     }
 

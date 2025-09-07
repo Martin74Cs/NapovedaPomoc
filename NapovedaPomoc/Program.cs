@@ -2,7 +2,7 @@ using NapovedaPomoc;
 
 //Singleton
 new Pouziti().Priklad();
-return;
+//return;
 
 var builder = WebApplication.CreateBuilder(args);
 var app = builder.Build();
